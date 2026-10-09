@@ -4,7 +4,7 @@ using System.Linq;
 using AutoEvent.API;
 using AutoEvent.Interfaces;
 using CommandSystem;
-using LabApi.Features.Permissions;
+using AutoEvent.ApiFeatures;
 
 namespace AutoEvent.Vote.Commands;
 
@@ -23,7 +23,7 @@ public class VoteCreate : ICommand, IUsageProvider
             return false;
         }
         
-        if (!sender.HasPermissions("ev.vote"))
+        if (!CommandPermissions.HasPermission(sender, "ev.vote"))
         {
             response = "<color=red>You do not have permission to use this command!</color>";
             return false;

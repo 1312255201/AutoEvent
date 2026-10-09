@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "Gy6iOQl9Fq0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\260700119\\Documents\\GitHub\\AutoEvent\\AutoEvent.Vote\\AutoEvent.Vote.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\260700119\\.nuget\\packages\\bepinex.assemblypublicizer.msbuild\\0.4.3\\bepinex.assemblypublicizer.msbuild.0.4.3.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\10.0.9\\microsoft.bcl.asyncinterfaces.10.0.9.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\naudio.core\\2.2.1\\naudio.core.2.2.1.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\northwood.labapi\\1.1.7\\northwood.labapi.1.1.7.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\secretlabnaudio.core\\2.1.0\\secretlabnaudio.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.buffers\\4.6.1\\system.buffers.4.6.1.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.io.pipelines\\10.0.9\\system.io.pipelines.10.0.9.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.memory\\4.6.3\\system.memory.4.6.3.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.numerics.vectors\\4.6.1\\system.numerics.vectors.4.6.1.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.1.2\\system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0\\system.security.cryptography.algorithms.4.3.0.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0\\system.security.cryptography.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\system.security.cryptography.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.text.encodings.web\\10.0.9\\system.text.encodings.web.10.0.9.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.text.json\\10.0.9\\system.text.json.10.0.9.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.threading.tasks.extensions\\4.6.3\\system.threading.tasks.extensions.4.6.3.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\system.valuetuple\\4.6.2\\system.valuetuple.4.6.2.nupkg.sha512",
+    "C:\\Users\\260700119\\.nuget\\packages\\yamldotnet\\11.0.1\\yamldotnet.11.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

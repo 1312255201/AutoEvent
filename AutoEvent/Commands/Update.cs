@@ -1,7 +1,6 @@
 using System;
 using AutoEvent.ApiFeatures;
 using CommandSystem;
-using LabApi.Features.Permissions;
 using ProjectMER.Events.Handlers;
 
 namespace AutoEvent.Commands;
@@ -21,7 +20,7 @@ internal class Update : ICommand
             return false;
         }
         
-        if (!sender.HasPermissions("ev.update"))
+        if (!CommandPermissions.HasPermission(sender, "ev.update"))
         {
             response = "<color=red>You do not have permission to use this command!</color>";
             return false;

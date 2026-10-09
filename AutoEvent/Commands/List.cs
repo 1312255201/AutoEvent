@@ -4,7 +4,7 @@ using System.Text;
 using AutoEvent.API.Season;
 using AutoEvent.Interfaces;
 using CommandSystem;
-using LabApi.Features.Permissions;
+using AutoEvent.ApiFeatures;
 using EventManager = AutoEvent.API.EventManager;
 
 namespace AutoEvent.Commands;
@@ -24,7 +24,7 @@ internal class List : ICommand
             return false;
         }
         
-        if (!sender.HasPermissions("ev.list"))
+        if (!CommandPermissions.HasPermission(sender, "ev.list"))
         {
             response = "<color=red>You do not have permission to use this command!</color>";
             return false;

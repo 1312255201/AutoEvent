@@ -1,7 +1,7 @@
 ﻿using System;
 using AutoEvent.Loader;
 using CommandSystem;
-using LabApi.Features.Permissions;
+using AutoEvent.ApiFeatures;
 
 namespace AutoEvent.Commands;
 
@@ -20,7 +20,7 @@ internal class Reload : ICommand
             return false;
         }
         
-        if (!sender.HasPermissions("ev.reload"))
+        if (!CommandPermissions.HasPermission(sender, "ev.reload"))
         {
             response = "<color=red>You do not have permission to use this command!</color>";
             return false;

@@ -46,8 +46,8 @@
         <ProjectReference Include="..\AutoEvent\AutoEvent.csproj"/>
     </ItemGroup>
 
-    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-        <Exec Command="xcopy &quot;$(TargetPath)&quot; &quot;%appdata%\SCP Secret Laboratory\LabAPI\plugins\global&quot; /y"/>
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(DeployPlugin)' == 'true'">
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(APPDATA)\SCP Secret Laboratory\LabAPI\plugins\global" />
     </Target>
 
 </Project>

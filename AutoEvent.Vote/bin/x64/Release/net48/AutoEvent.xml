@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AutoEvent</name>
+    </assembly>
+    <members>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.None">
+            <summary>
+                No flags are specified. Loadouts will be applied normally.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.IgnoreRole">
+            <summary>
+                Players will not have a role set.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.IgnoreItems">
+            <summary>
+                Players will not have items added.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.DontClearDefaultItems">
+            <summary>
+                Players will not have their default role items cleared before adding items.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.IgnoreEffects">
+            <summary>
+                Players won't have effects applied to them.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.IgnoreHealth">
+            <summary>
+                Players won't have their health set.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.IgnoreAhp">
+            <summary>
+                Player's won't have their Artificial Health set.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.IgnoreSize">
+            <summary>
+                Player's won't have their sizes changed.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.IgnoreInfiniteAmmo">
+            <summary>
+                Player's won't have infinite ammo applied from loadouts.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.ForceInfiniteAmmo">
+            <summary>
+                Players will have infinite ammo applied. Overrides IgnoreInfiniteAmmo.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.IgnoreGodMode">
+            <summary>
+                Players will note have Godmode set.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.IgnoreWeapons">
+            <summary>
+                Players will not recieve weapons.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.IgnoreStamina">
+            <summary>
+                Stamina will not be added.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.ForceEndlessClip">
+            <summary>
+                The player will have an endless amount of ammo.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.UseDefaultSpawnPoint">
+            <summary>
+                The player will stay in the default spawn point.
+            </summary>
+        </member>
+        <member name="F:AutoEvent.API.Enums.LoadoutFlags.ItemsOnly">
+            <summary>
+                Only give players items.
+            </summary>
+        </member>
+    </members>
+</doc>

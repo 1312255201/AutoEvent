@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using AutoEvent.Loader;
 using CommandSystem;
-using LabApi.Features.Permissions;
+using AutoEvent.ApiFeatures;
 
 namespace AutoEvent.Commands;
 
@@ -22,7 +22,7 @@ internal class Translations : ICommand, IUsageProvider
             return false;
         }
         
-        if (!sender.HasPermissions("ev.language"))
+        if (!CommandPermissions.HasPermission(sender, "ev.language"))
         {
             response = "<color=red>You do not have permission to use this command!</color>";
             return false;

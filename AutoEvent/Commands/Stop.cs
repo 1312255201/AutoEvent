@@ -1,6 +1,6 @@
 ﻿using System;
 using CommandSystem;
-using LabApi.Features.Permissions;
+using AutoEvent.ApiFeatures;
 using LabApi.Features.Wrappers;
 using PlayerRoles;
 
@@ -21,7 +21,7 @@ internal class Stop : ICommand
             return false;
         }
         
-        if (!sender.HasPermissions("ev.stop"))
+        if (!CommandPermissions.HasPermission(sender, "ev.stop"))
         {
             response = "<color=red>You do not have permission to use this command!</color>";
             return false;

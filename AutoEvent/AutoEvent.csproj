@@ -32,39 +32,61 @@
 
 
     <ItemGroup>
-        <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.3" PrivateAssets="all"/>
-        <PackageReference Include="Lib.Harmony" Version="2.2.2"/>
-        <PackageReference Include="Northwood.LabAPI" Version="1.1.7"/>
-        <PackageReference Include="SecretLabNAudio.Core" Version="2.1.0"/>
-        <PackageReference Include="System.Net.Http" Version="4.3.4"/>
-        <PackageReference Include="System.Text.Json" Version="10.0.9"/>
+        <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.3" PrivateAssets="all" />
+        <PackageReference Include="Lib.Harmony" Version="2.2.2" />
+        <PackageReference Include="Northwood.LabAPI" Version="1.1.7" />
+        <PackageReference Include="SecretLabNAudio.Core" Version="2.1.0" />
+        <PackageReference Include="System.Net.Http" Version="4.3.4" />
+        <PackageReference Include="System.Text.Json" Version="10.0.9" />
     </ItemGroup>
 
     <ItemGroup>
-        <Reference Include="System.IO.Compression"/>
-        <Reference Include="System.IO.Compression.FileSystem"/>
-        <Reference Include="Assembly-CSharp" HintPath="$(SL_REFERENCES)\Assembly-CSharp.dll" Publicize="true"/>
-        <Reference Include="Assembly-CSharp-firstpass" HintPath="$(SL_REFERENCES)\Assembly-CSharp-firstpass.dll"/>
-        <Reference Include="Mirror" HintPath="$(SL_REFERENCES)\Mirror.dll"/>
-        <Reference Include="UnityEngine.AnimationModule" HintPath="$(SL_REFERENCES)\UnityEngine.AnimationModule.dll"/>
-        <Reference Include="CommandSystem.Core" HintPath="$(SL_REFERENCES)\CommandSystem.Core.dll"/>
-        <Reference Include="UnityEngine.CoreModule" HintPath="$(SL_REFERENCES)\UnityEngine.CoreModule.dll"/>
-        <Reference Include="UnityEngine.PhysicsModule" HintPath="$(SL_REFERENCES)\UnityEngine.PhysicsModule.dll"/>
-        <Reference Include="NorthwoodLib" HintPath="$(SL_REFERENCES)\NorthwoodLib.dll"/>
-        <Reference Include="ProjectMER" HintPath="$(LABAPI_PLUGINS)\ProjectMER.dll"/>
-        <Reference Include="RadioMenuAPI" HintPath="$(LABAPI_PLUGINS)\RadioMenuAPI.dll"/>
-        <Reference Include="LabApiExtensions" HintPath="$(LABAPI_DEPENDENCIES)\LabApiExtensions.dll"/>
+        <Reference Include="Assembly-CSharp-firstpass">
+          <HintPath>..\..\GeZiExiled\packages\Input\Assembly-CSharp-firstpass.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp">
+          <HintPath>..\..\GeZiExiled\packages\ExMod.Exiled.9.14.2\lib\net48\Assembly-CSharp-Publicized.dll</HintPath>
+        </Reference>
+        <Reference Include="CommandSystem.Core">
+          <HintPath>..\..\GeZiExiled\packages\Input\CommandSystem.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="LabApiExtensions">
+          <HintPath>..\..\GeZiExiled\packages\Input\LabApiExtensions.dll</HintPath>
+        </Reference>
+        <Reference Include="Mirror">
+          <HintPath>..\..\GeZiExiled\packages\Input\Mirror-Publicized.dll</HintPath>
+        </Reference>
+        <Reference Include="NorthwoodLib">
+          <HintPath>..\..\GeZiExiled\packages\Input\NorthwoodLib-Publicized.dll</HintPath>
+        </Reference>
+        <Reference Include="ProjectMER">
+          <HintPath>..\..\GeZiExiled\packages\Input\ProjectMER.dll</HintPath>
+        </Reference>
+        <Reference Include="RadioMenuAPI">
+          <HintPath>..\..\GeZiExiled\packages\Input\RadioMenuAPI.dll</HintPath>
+        </Reference>
+        <Reference Include="System.IO.Compression" />
+        <Reference Include="System.IO.Compression.FileSystem" />
+        <Reference Include="UnityEngine.AnimationModule">
+          <HintPath>..\..\GeZiExiled\packages\Input\UnityEngine.AnimationModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>..\..\GeZiExiled\packages\Input\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.PhysicsModule">
+          <HintPath>..\..\GeZiExiled\packages\Input\UnityEngine.PhysicsModule.dll</HintPath>
+        </Reference>
     </ItemGroup>
 
     <ItemGroup>
-        <Content Include="..\Docs\*" Link="Docs\%(Filename)%(Extension)"/>
-        <Content Include="..\Docs\Translations\*" Link="Docs\Translations\%(Filename)%(Extension)"/>
-        <Content Include="..\README.md" Link="README.md"/>
-        <Content Include="..\CHANGELOG.md" Link="CHANGELOG.md"/>
-        <Content Include="Translations\*.yml"/>
+        <Content Include="..\Docs\*" Link="Docs\%(Filename)%(Extension)" />
+        <Content Include="..\Docs\Translations\*" Link="Docs\Translations\%(Filename)%(Extension)" />
+        <Content Include="..\README.md" Link="README.md" />
+        <Content Include="..\CHANGELOG.md" Link="CHANGELOG.md" />
+        <Content Include="Translations\*.yml" />
     </ItemGroup>
 
-    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-        <Exec Command="xcopy &quot;$(TargetPath)&quot; &quot;%appdata%\SCP Secret Laboratory\LabAPI\plugins\global&quot; /y"/>
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(DeployPlugin)' == 'true'">
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(APPDATA)\SCP Secret Laboratory\LabAPI\plugins\global" />
     </Target>
 </Project>

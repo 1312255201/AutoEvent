@@ -1,0 +1,152 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\260700119\\Documents\\GitHub\\AutoEvent\\AutoEvent.Vote\\AutoEvent.Vote.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\260700119\\Documents\\GitHub\\AutoEvent\\AutoEvent.Vote\\AutoEvent.Vote.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\260700119\\Documents\\GitHub\\AutoEvent\\AutoEvent.Vote\\AutoEvent.Vote.csproj",
+        "projectName": "AutoEvent.Vote",
+        "projectPath": "C:\\Users\\260700119\\Documents\\GitHub\\AutoEvent\\AutoEvent.Vote\\AutoEvent.Vote.csproj",
+        "packagesPath": "C:\\Users\\260700119\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\260700119\\Documents\\GitHub\\AutoEvent\\AutoEvent.Vote\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\260700119\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "framework": "net48",
+            "targetAlias": "net48",
+            "projectReferences": {
+              "C:\\Users\\260700119\\Documents\\GitHub\\AutoEvent\\AutoEvent\\AutoEvent.csproj": {
+                "projectPath": "C:\\Users\\260700119\\Documents\\GitHub\\AutoEvent\\AutoEvent\\AutoEvent.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net48": {
+          "framework": "net48",
+          "targetAlias": "net48",
+          "dependencies": {
+            "BepInEx.AssemblyPublicizer.MSBuild": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.4.3, )"
+            },
+            "Northwood.LabAPI": {
+              "target": "Package",
+              "version": "[1.1.7, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[10.0.9, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\260700119\\Documents\\GitHub\\AutoEvent\\AutoEvent\\AutoEvent.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\260700119\\Documents\\GitHub\\AutoEvent\\AutoEvent\\AutoEvent.csproj",
+        "projectName": "AutoEvent",
+        "projectPath": "C:\\Users\\260700119\\Documents\\GitHub\\AutoEvent\\AutoEvent\\AutoEvent.csproj",
+        "packagesPath": "C:\\Users\\260700119\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\260700119\\Documents\\GitHub\\AutoEvent\\AutoEvent\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\260700119\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "framework": "net48",
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.400"
+      },
+      "frameworks": {
+        "net48": {
+          "framework": "net48",
+          "targetAlias": "net48",
+          "dependencies": {
+            "BepInEx.AssemblyPublicizer.MSBuild": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.4.3, )"
+            },
+            "Lib.Harmony": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Northwood.LabAPI": {
+              "target": "Package",
+              "version": "[1.1.7, )"
+            },
+            "SecretLabNAudio.Core": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[10.0.9, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

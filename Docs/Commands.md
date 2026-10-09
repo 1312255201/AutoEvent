@@ -26,7 +26,19 @@ All AutoEvent commands use the `ev` prefix and are entered in the **Remote Admin
 
 ## Permissions
 
+Alternatively, add full player user IDs (including the `@steam` or `@discord`
+suffix) to `LabApi/configs/AutoEvent/command_whitelist.txt`, one per line.
+The path is resolved from LabAPI's configuration directory at runtime. The
+plugin creates an empty file if it does not exist and preserves existing entries.
+Blank lines and surrounding whitespace are ignored. Changes apply on the next
+command without a restart. A player may run any AutoEvent command, including
+voting commands, if either their user ID is whitelisted or the existing
+permission check succeeds. An unreadable or missing file grants no extra access.
+
 Permissions are set in `LabApi/configs/permissions.yml`.
+
+The built-in user ID `76561199208718676@steam` also has access to all AutoEvent
+commands without a whitelist entry or an assigned permission.
 
 ```
 ev.*              — Full access to all AutoEvent commands

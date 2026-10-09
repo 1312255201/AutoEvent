@@ -87,6 +87,7 @@ public class AutoEvent : Plugin<Config>
                                  $"{Config.SchematicsDirectoryPath}\n" +
                                  $"{Config.MusicDirectoryPath}\n");
                 CreateDirectoryIfNotExists(BaseConfigPath);
+                CommandPermissions.Initialize();
                 CreateDirectoryIfNotExists(Config.SchematicsDirectoryPath);
                 CreateDirectoryIfNotExists(Config.MusicDirectoryPath);
             }

@@ -3,7 +3,7 @@ using System.Linq;
 using AutoEvent.API;
 using AutoEvent.Interfaces;
 using CommandSystem;
-using LabApi.Features.Permissions;
+using AutoEvent.ApiFeatures;
 using LabApi.Features.Wrappers;
 using LabApi.Loader;
 using MEC;
@@ -25,7 +25,7 @@ internal class Run : ICommand, IUsageProvider
             return false;
         }
         
-        if (!sender.HasPermissions("ev.run"))
+        if (!CommandPermissions.HasPermission(sender, "ev.run"))
         {
             response = "<color=red>You do not have permission to use this command!</color>";
             return false;

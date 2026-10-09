@@ -2,7 +2,6 @@ using System;
 using AutoEvent.ApiFeatures;
 using AutoEvent.Interfaces;
 using CommandSystem;
-using LabApi.Features.Permissions;
 
 namespace AutoEvent.Commands;
 
@@ -23,7 +22,7 @@ internal class Volume : ICommand, IUsageProvider
                 return false;
             }
             
-            if (!sender.HasPermissions("ev.volume"))
+            if (!CommandPermissions.HasPermission(sender, "ev.volume"))
             {
                 response = "<color=red>You do not have permission to use this command!</color>";
                 return false;
